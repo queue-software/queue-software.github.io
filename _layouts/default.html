@@ -1,0 +1,16 @@
+{% if site.github %}{% assign revision = site.github.build_revision %}{% else %}{% assign revision = site.git.last_commit.long_sha %}{% endif %}
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+        {{ content }}
+    
+    <script src="https://my.hellobar.com/ced736df784ca5f4959578342f17f7b25f9a414a.js" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+
+</html>

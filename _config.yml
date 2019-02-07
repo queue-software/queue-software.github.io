@@ -16,7 +16,7 @@ defaults:
       path: "" # All files
     values:
       layout: "default"
-      subtitle: "Gracefully deal with high traffic"
+      tagline: "Gracefully deal with high traffic"
 
 # Pagination
 paginate: 5
