@@ -30,7 +30,9 @@ pages:
   - master
 
 cloudflare:
-  stage: deploy
+  stage: post-deploy
   script:
   - sleep 15s
-  - curl -X POST "https://api.cloudflare.com/client/v4/zones/c15c1715ee61d6169e818565692a8e3bpurge_cache" -H "X-Auth-Email: $CLOUDFLARE_API_USER" -H "X-Auth-Key: $CLOUDFLARE_API_TOKEN" -H "Content-Type: application/json" --data '{"purge_everything":true}'
+  - bash ./cloudflare-clear.sh
+  only:
+  - master
