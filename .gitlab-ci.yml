@@ -3,6 +3,11 @@
 # Docs: https://docs.gitlab.com/ce/pages/
 image: ruby:2.3
 
+stages:
+  - test
+  - deploy
+  - post-deploy
+
 variables:
   JEKYLL_ENV: production
 
