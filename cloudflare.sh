@@ -1,5 +1,3 @@
-set -x
-
 echo "Flushing CloudFlare cache via API"
 
 curl -sX POST "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE_ID/purge_cache" \
