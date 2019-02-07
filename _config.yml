@@ -1,0 +1,35 @@
+# Permalink style
+permalink: pretty
+
+# Basic website configuration
+url: /
+assets: /assets/
+markdown: kramdown
+
+# Set the site defaults
+title: Queue Software
+
+# Set the frontmatter defaults
+defaults:
+  -
+    scope:
+      path: "" # All files
+    values:
+      layout: "default"
+      subtitle: "Gracefully deal with high traffic"
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page/:num/"
+
+excerpt_separator: <!--more-->
+
+# Exclusions
+exclude: ["README.md", "CNAME", ".gitignore", ".gitlab-ci.yml", "Gemfile"]
+
+# Plugins
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-git_metadata
