@@ -2,7 +2,7 @@
 permalink: pretty
 
 # Basic website configuration
-url: /
+baseurl: /
 assets: /assets/
 markdown: kramdown
 
