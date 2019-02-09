@@ -17,6 +17,7 @@ defaults:
     values:
       layout: "default"
       tagline: "Gracefully deal with high traffic"
+      hero_class: "is-medium"
 
 # Pagination
 paginate: 5
@@ -28,7 +29,7 @@ excerpt_separator: <!--more-->
 exclude: ["README.md", "CNAME", ".gitignore", ".gitlab-ci.yml", "Gemfile", "cloudflare.sh"]
 
 # Plugins
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate

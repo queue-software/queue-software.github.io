@@ -1,4 +1,4 @@
-{% if site.github %}{% assign revision = site.github.build_revision %}{% else %}{% assign revision = site.git.last_commit.long_sha %}{% endif %}
+{% if site.github %}{% assign revision = site.github.build_revision %}{% assign hosting = "GitHub" %}{% else %}{% assign revision = site.git.last_commit.long_sha %}{% assign hosting = "GitLab" %}{% endif %}
 
 <!DOCTYPE html>
 <html>
@@ -7,9 +7,22 @@
 
   <body>
 
+        {% include nav.html %}
+
         {{ content }}
-    
-    <script src="https://my.hellobar.com/ced736df784ca5f4959578342f17f7b25f9a414a.js" type="text/javascript" charset="utf-8"></script>
+
+        {% include footer.html %}
+
+        <div id="backtotop"><a href="#"></a></div>
+
+        <!-- Concatenated jQuery and plugins -->
+        <script src="assets/js/app.js"></script>
+
+        <!-- Bulkit js -->
+        <script src="assets/js/components-modals.js"></script>
+        <script src="assets/js/landingv3.js"></script>
+        <script src="assets/js/auth.js"></script>
+        <script src="assets/js/main.js"></script>
 
   </body>
 
