@@ -1,5 +1,5 @@
 /* Correct the header image size */
-.navbar-wrapper .navbar-brand img {
+.navbar-wrapper .navbar-brand img, .navbar-wrapper.navbar-faded .navbar-brand img {
     height: 48px;
     max-height: 48px;
     padding-right: 15px;
