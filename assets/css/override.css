@@ -10,3 +10,19 @@
 footer.footer-light-medium .small-footer-logo {
     height: 45px;
 }
+
+/* Pricing in GBP */
+.pricing-wrapper .flex-card .condensed-plan .plan-price span:before {
+    content: '£ ';
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.pricing-wrapper .flex-card .condensed-plan .plan-price span:after {
+    content: 'PER QUEUE, PER MONTH';
+}
+
+/* "Save 10%" image */
+.billing-switcher-wrapper .discount {
+    right: -105px;
+}
