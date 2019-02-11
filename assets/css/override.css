@@ -11,6 +11,7 @@
     height: 48px;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-top: 3px;
 }
 
 .navbar-light .navbar-brand .logo-image {
