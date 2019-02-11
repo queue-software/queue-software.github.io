@@ -1,12 +1,12 @@
 <!-- Hero and nav -->
 <div class="hero {{ page.hero_class }}">
 
-    <nav class="navbar navbar-wrapper navbar-default navbar-fade is-transparent">
+    <nav class="navbar navbar-wrapper navbar-fade is-transparent {{ page.nav_class }}">
         <div class="container">
             <!-- Brand -->
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                    <img src="{{ "images/logos/header.png" | prepend: site.assets }}" alt="">
+                    <div class="logo-image"></div>
                 </a>
 
                 <!-- Responsive toggle -->

@@ -6,6 +6,21 @@
     padding-top: 5px;
 }
 
+.logo-image {
+    width: 168px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navbar-light .navbar-brand .logo-image {
+    background-image: url(../images/logos/header-light.png);
+}
+
+.navbar-default .navbar-brand .logo-image, .navbar-dark .navbar-brand .logo-image, .navbar-faded .navbar-brand .logo-image {
+    background-image: url(../images/logos/header.png);
+}
+
 /* Correct the footer image size */
 footer.footer-light-medium .small-footer-logo {
     height: 45px;

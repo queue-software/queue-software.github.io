@@ -17,6 +17,7 @@ defaults:
     values:
       layout: "default"
       tagline: "Gracefully deal with high traffic"
+      nav_class: "navbar-default"
       hero_class: "is-medium"
 
 # Pagination

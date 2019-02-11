@@ -1,23 +1,23 @@
 /*! landingv3.js | Bulkit | CSS Ninja */
 
 /* ==========================================================================
-Landing kit 4 JS file 
+Landing kit 4 JS file
 ========================================================================== */
 
 $(document).ready(function($){
-    
+
     "use strict";
 
     //Toggle between light and dark logo when solid navbar comes in
-    $(window).on('scroll', function () {    // this will work when your window scrolled.
-        var height = $(window).scrollTop();  //getting the scrolling height of window
-        if(height  > 80) {
-            $("img.light-logo").attr("src","assets/images/logos/bulkit-logo-lemonade.png");
-        } else{
-            $("img.light-logo").attr("src","assets/images/logos/bulkit-w.png");
-        }
-    });
-    
+    //$(window).on('scroll', function () {    // this will work when your window scrolled.
+    //    var height = $(window).scrollTop();  //getting the scrolling height of window
+    //    if(height  > 80) {
+    //        $("img.logo").hide(); $("img.nav-logo").show();
+    //    } else{
+    //        $("img.nav-logo").show();
+    //    }
+    //});
+
     //Toggle the sign up button color when solid navbar comes in
     if ($('.navbar-light').length) {
         $(window).on('scroll', function () {    // this will work when your window scrolled.
@@ -27,7 +27,7 @@ $(document).ready(function($){
             } else{
                 $('.button-signup').removeClass('primary-btn').addClass('light-btn');
             }
-        }); 
+        });
     }
 
     //Clone the original video
@@ -39,7 +39,7 @@ $(document).ready(function($){
             tempSrc = $this.attr('src');
         $this.attr('src', "");
         $('#video-embed').remove();
-        
+
         setTimeout(function(){
             $('.background-wrapper').append(video);
             Video('#video-embed');
