@@ -31,6 +31,10 @@
                 <!-- Navbar Start -->
                 <div class="navbar-start">
                     <!-- Navbar item -->
+                    <a class="navbar-item is-slide" href="{{ "/why" | prepend: site.url }}">
+                        Why
+                    </a>
+                    <!-- Navbar item -->
                     <a class="navbar-item is-slide" href="{{ "/pricing" | prepend: site.url }}">
                         Pricing
                     </a>
@@ -38,17 +42,17 @@
                     <a class="navbar-item is-slide" href="https://support.queue.software/">
                         Help
                     </a>
-                    <!-- Navbar item -->
-                    <a class="navbar-item is-slide" href="https://app.queue.software">
-                        Login
-                    </a>
                 </div>
 
                 <!-- Navbar end -->
                 <div class="navbar-end">
                     <!-- Signup button -->
                     <div class="navbar-item">
-                        <a id="#signup-btn" href="landing-v3-signup.html" class="button button-signup button-cta btn-outlined is-bold btn-align {% if page.nav_class contains 'light' %}light-btn{% else %}primary-btn{% endif %} rounded raised">
+                        <!-- Navbar item -->
+                        <a class="navbar-item is-slide" href="{{ site.login_url }}" style="margin-right: 10px;">
+                            Login
+                        </a>
+                        <a id="#signup-btn" href="{{ site.signup_url }}" class="button button-signup button-cta btn-outlined is-bold btn-align {% if page.nav_class contains 'light' %}light-btn{% else %}primary-btn{% endif %} rounded raised">
                             Sign Up
                         </a>
                     </div>

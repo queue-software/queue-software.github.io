@@ -6,6 +6,9 @@ baseurl: /
 assets: /assets/
 markdown: kramdown
 
+signup_url: https://control.queue.software/register
+login_url: https://control.queue.software/login
+
 # Set the site defaults
 title: Queue Software
 
